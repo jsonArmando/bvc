@@ -3,14 +3,15 @@ package com.bvc.test.mapper;
 import com.bvc.test.dto.EventStatusDto;
 import com.bvc.test.entities.EventStatus;
 import org.mapstruct.*;
+import org.mapstruct.factory.Mappers;
+import org.springframework.stereotype.Service;
 
 @Mapper(componentModel = "spring")
 public interface EventStatusMapper {
-
-    @Mapping(source = "id", target = "id")
-    @Mapping(source = "event", target = "event")
+    EventStatusMapper INSTANCE = Mappers.getMapper(EventStatusMapper.class);
+    @Mapping(source = "eventStatus.id", target = "id")
+    @Mapping(source = "eventStatus.event", target = "event")
     EventStatusDto toResponse(EventStatus eventStatus);
-
     @Mapping(source = "id", target = "id")
     @Mapping(source = "event", target = "event")
     EventStatus toSave(EventStatusDto eventStatusDto);
