@@ -14,10 +14,10 @@ import java.util.Date;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class EventStatusDto {
     private Integer id;
+    private String idEvent;
     private String event;
     private Date date_event;
     private Integer amount_event;
-    private Integer cost;
-    private String digital_event;
+    private String digitalEvent;
     private String digital_event_description;
 }

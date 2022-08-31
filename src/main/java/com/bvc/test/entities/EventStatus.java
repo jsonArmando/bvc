@@ -12,19 +12,19 @@ import java.util.Date;
 @Table(name = "EVENT_BVC")
 public class EventStatus {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID_EVENT")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name = "ID")
     private Integer id;
+    @Column(name = "ID_EVENT")
+    private String idEvent;
     @Column(name = "EVENT")
     private String event;
     @Column(name = "DATE_EVENT")
     private Date date_event;
     @Column(name = "AMOUNT_EVENT")
     private Integer amount_event;
-    @Column(name = "COST")
-    private Integer cost;
     @Column(name = "DIGITAL_EVENTS_REGISTRATION")
-    private String digital_event;
+    private String digitalEvent;
     @Column(name = "REGISTRY_EVENTS_DIGITAL_DESCRIPTION")
     private String digital_event_description;
 }

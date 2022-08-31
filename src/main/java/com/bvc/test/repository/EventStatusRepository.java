@@ -8,4 +8,6 @@ import java.util.List;
 
 @Repository
 public interface EventStatusRepository extends CrudRepository<EventStatus, Integer> {
+    List<EventStatus> findByIdEvent(String idEvent);
+    List<EventStatus> findByDigitalEvent(String digitalEvent);
 }

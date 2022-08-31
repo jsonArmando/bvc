@@ -1,0 +1,5 @@
+insert into EVENT_DIGITAL(ID,ID_EVENT,EVENT,PRICE)values(1,"F001","Consulta de información bursátil",20.5)
+insert into EVENT_DIGITAL(ID,ID_EVENT,EVENT,PRICE)values(2,"F002","Emisión de título valor",200)
+insert into EVENT_DIGITAL(ID,ID_EVENT,EVENT,PRICE)values(3,"F003","Generación de reportes operativos",55.9)
+insert into EVENT_DIGITAL(ID,ID_EVENT,EVENT,PRICE)values(4,"F004","Custodia de título valor",100)
+insert into EVENT_DIGITAL(ID,ID_EVENT,EVENT,PRICE)values(5,"F005","Complementación de operación ",32)
