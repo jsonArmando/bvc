@@ -4,7 +4,6 @@ import com.bvc.test.dto.EventStatusDto;
 import com.bvc.test.entities.EventStatus;
 import org.mapstruct.*;
 import org.mapstruct.factory.Mappers;
-import org.springframework.stereotype.Service;
 
 @Mapper(componentModel = "spring")
 public interface EventStatusMapper {

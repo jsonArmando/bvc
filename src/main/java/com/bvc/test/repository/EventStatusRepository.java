@@ -4,6 +4,8 @@ import com.bvc.test.entities.EventStatus;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface EventStatusRepository extends CrudRepository<EventStatus, Integer> {
 }

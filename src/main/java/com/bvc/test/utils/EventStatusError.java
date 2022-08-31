@@ -12,7 +12,7 @@ public enum EventStatusError {
     BAD_REQUEST_INVALID_ARGUMENTS(1,"Validation error. Detail in the 'errors' field."),
     BAD_REQUEST_INVALID_PARAMETERS(2, "Missing required parameter."),
     ENDPOINT_NOT_FOUND(3, "Endpoint not found."),
-    RESOURCE_COMMODITY_STATUS_NOT_FOUND(100, "COMMODITY status resource not found."),
+    RESOURCE_EVENT_STATUS_NOT_FOUND(100, "EVENT status resource not found."),
     HIGH_RISK_DISEASE(10,"HIGH risk disease."),
     MEDIUM_RISK_DISEASE(11,"MEDIUM risk disease."),
     LOW_RISK_DISEASE(11,"LOW risk disease"),
@@ -31,7 +31,7 @@ public enum EventStatusError {
             case BAD_REQUEST_INVALID_PARAMETERS:
                 return HttpStatus.BAD_REQUEST;
             case ENDPOINT_NOT_FOUND:
-            case RESOURCE_COMMODITY_STATUS_NOT_FOUND:
+            case RESOURCE_EVENT_STATUS_NOT_FOUND:
                 return HttpStatus.NOT_FOUND;
             case HIGH_RISK_DISEASE:
             case MEDIUM_RISK_DISEASE:
